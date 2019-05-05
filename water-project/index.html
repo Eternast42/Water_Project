@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Water Project</title>
+</head>
+<!-- retranscription du code de https://www.youtube.com/watch?v=0lFChPsLwBo chaine: Codegrid-->
+<body>
+
+  <div class="overlay">
+    <h1>WATER PROJECT</h1>
+  </div>
+
+  <div class="wrapper">
+    <div class="logo">Water-Project</div>
+    <div class="nav">
+      <ul>
+        <a href="#"><li class="li">Home</li></a>
+        <a href="./article/index.html"><li class="li">Article</li></a>
+        <a href="#"><li class="li">Search</li></a>
+      </ul>
+    </div>
+
+    <div class="header">
+      <h1>Water Project <br> Pour la Nature</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies nunc diam, vel convallis nibh
+        blandit in. Proin rhoncus augue vel fringilla rutrum. </p>
+      <button>EXPLORE</button>
+    </div>
+    <div class="bottom-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="./article/index.html"><h6>Franck Lepage</h6></a>
+            <p>Pourquoi consommons nous de l’eau en bouteille alors que nous  avons de l’eau potable et qui s'avère être 300 fois moins cher que l’eau en bouteille ? 
+              Les usines dites à eaux sont uniquement des usines à plastique selon lui... 
+               </p>
+          </div>
+          <div class="col-lg-4">
+            <a href="./article/index.html"><h6>Marc Henry</h6></a>
+            <p>Sachant que nous sommes constitués à 99% d'eau en nombres de molécules et que la physique quantique nous apprend que l'eau est vecteur d'information, il est important de bien choisir son eau de boisson quotidienne...</p>
+          </div>
+          <div class="col-lg-4">
+            <a href="./article/index.html"><h6>Statistique du Monde</h6></a>
+            <p>Selon le Centre d’information sur l’eau, en 2017, 40% de la consommation d'eau potable vient des bouteilles. Un ratio particulièrement important alors que son prix est de 100 à 300 fois supérieur à celle du robinet...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  TweenMax.to(".overlay h1", 2, {
+    opacity: 0,
+    y: -60,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.to(".overlay", 2, {
+    delay: 1,
+    opacity: 0.5,
+    top: "-100%",
+    ease: Expo.easeInOut
+
+  })
+  TweenMax.from(".logo", 1, {
+    delay: 2.4,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.staggerFrom(".nav ul li", 1, {
+    delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+  }, 0.2)
+
+  TweenMax.from(".side-strip", 2, {
+    delay: 2.4,
+    opacity: 0,
+    y: 40,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.from(".row", 2, {
+    delay: 2.4,
+    opacity: 0,
+    x: 40,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.from(".row h6", 2, {
+    delay: 3,
+    opacity: 0,
+    y: 40,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.from(".row p", 2, {
+    delay: 3.2,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.from(".header h1", 2, {
+    delay: 3.2,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.from(".header p", 2, {
+    delay: 3.4,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.from(".header button", 2, {
+    delay: 3.6,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+  })
+
+  
+  
+  </script>
+</body>
+
+</html>
